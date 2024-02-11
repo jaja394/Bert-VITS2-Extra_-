@@ -34,7 +34,8 @@ def transcribe_one(audio_path):
     print(f"Detected language: {max(probs, key=probs.get)}")
     lang = max(probs, key=probs.get)
     # decode the audio
-    options = whisper.DecodingOptions(beam_size=5)
+    options = whisper.DecodingOptions(beam_size=5, prompt="生于忧患，死于欢乐。不亦快哉！")
+    # 增加prompt
     result = whisper.decode(model, mel, options)
 
     # print the recognized text
