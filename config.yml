@@ -160,9 +160,9 @@ server:
       # 模型config.json的路径
       config: ""
       # 模型使用设备，若填写则会覆盖默认配置
-      device: "cpu"
+      device: "cuda"
       # 模型默认使用的语言
-      language: "JP"
+      language: "ZH"
       # 模型人物默认参数
       # 不必填写所有人物，不填的使用默认值
       speakers: [ ] # 也可以不填
